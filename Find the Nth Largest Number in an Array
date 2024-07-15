@@ -1,0 +1,13 @@
+import java.util.Arrays;
+public class NthLargestNumber {
+    public static void main(String[] args) {
+        int[] arr = {14, 67, 48, 23, 5, 62};
+        int n = 4;
+        Arrays.sort(arr);
+        if (n > 0 && n <= arr.length) {
+            System.out.println(n + "th Largest number: " + arr[arr.length - n]);
+        } else {
+            System.out.println("Invalid input for N.");
+        }
+    }
+}
